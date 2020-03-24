@@ -1,0 +1,1108 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12">
+        <owl:versionIRI rdf:resource="http://www.seinfeld.com/ontology.owl"/>
+        <rdfs:comment>A Seinfeld ontology that will describe the characters and their relationships to one another.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#defintion -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#defintion"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isBossof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isBossof">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isEmployeeof"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isChildof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isChildof">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isParentof"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isParentof"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isEmployeeof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isEmployeeof">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isFriendsWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isFriendsWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isNotFriendswith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isNotFriendswith"/>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isParentof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isParentof">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#AltonBenes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#AltonBenes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#FamilyMembers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#BabsKramer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#BabsKramer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isParentof"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#CosmoKramer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#FamilyMembers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#BabuBhatt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#BabuBhatt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SecondaryCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isFriendsWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#BethLukner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#BethLukner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Bosses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Bosses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Seinfeld"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#CosmoKramer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#CosmoKramer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MainCharacters"/>
+        <rdfs:defintion xml:lang="en">Cosmo Kramer, usually referred to as simply &quot;Kramer&quot;, is a fictional character on the American television sitcom Seinfeld (1989–1998), played by Michael Richards.</rdfs:defintion>
+        <rdfs:isDefinedBy xml:lang="en">Wikipedia</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#CrazyJoeDavola -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#CrazyJoeDavola">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SecondaryCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isNotFriendswith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#DaphneBowers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#DaphneBowers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GeorgeCostanza"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#DavidPuddy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#DavidPuddy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isNotFriendswith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#DonnaChang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#DonnaChang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#DrReston -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#DrReston">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MainCharacters"/>
+        <rdfs:isDefinedBy xml:lang="en">Elaine Marie Benes /ˈbɛnɪs/ is a fictional character on the American television sitcom Seinfeld, played by Julia Louis-Dreyfus.</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy xml:lang="en">Wikipedia</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#EstelleCostanza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#EstelleCostanza">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isParentof"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GeorgeCostanza"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#FamilyMembers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#FamilyMembers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#FamilyMembers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Seinfeld"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#FrankCostanza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#FrankCostanza">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isParentof"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GeorgeCostanza"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#FamilyMembers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#FredYerkes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#FredYerkes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GailCunningham -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GailCunningham">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#CosmoKramer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isNotFriendswith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GeorgeCostanza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GeorgeCostanza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MainCharacters"/>
+        <rdfs:defintion xml:lang="en">George Louis Costanza is a character in the American television sitcom Seinfeld (1989–1998), played by Jason Alexander.</rdfs:defintion>
+        <rdfs:isDefinedBy xml:lang="en">Wikipedia</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GeorgeSteinbrenner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GeorgeSteinbrenner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Bosses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isBossof"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GeorgeCostanza"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Seinfeld"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#HalKitzmiller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#HalKitzmiller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#HelenSeinfeld -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#HelenSeinfeld">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isParentof"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#FamilyMembers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#IzzyMandelbaum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#IzzyMandelbaum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SecondaryCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isFriendsWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MortySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JPeterman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JPeterman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Bosses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isBossof"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JackKlompus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JackKlompus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SecondaryCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isNotFriendswith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isNotFriendswith"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#HelenSeinfeld"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MortySeinfeld"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JackieChiles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JackieChiles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SecondaryCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isFriendsWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#CosmoKramer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JakeJarmel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JakeJarmel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JeannieSteinman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JeannieSteinman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MainCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:defintion xml:lang="en">Jerome &quot;Jerry&quot; Seinfeld (/ˈsaɪnfɛld/; SYNE-feld) is the title character and the main protagonist of the American television sitcom Seinfeld (1989–1998).</rdfs:defintion>
+        <owl:backwardCompatibleWith xml:lang="en">Wikipedia.</owl:backwardCompatibleWith>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JocelynLandis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JocelynLandis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Bosses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isBossof"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JoelRifkin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JoelRifkin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JohnFKennedyJr -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JohnFKennedyJr">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JohnGermaine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JohnGermaine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JustinPitt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JustinPitt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Bosses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isBossof"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#KeithHernandez -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#KeithHernandez">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isFriendsWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isNotFriendswith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#CosmoKramer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#KennyBania -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#KennyBania">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SecondaryCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isNotFriendswith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#LloydBraun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#LloydBraun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SecondaryCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isNotFriendswith"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GeorgeCostanza"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MainCharacters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MainCharacters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Seinfeld"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MarisaTomei -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MarisaTomei">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GeorgeCostanza"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MarlaPenny -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MarlaPenny">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JohnFKennedyJr"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MickeyAbbott -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MickeyAbbott">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SecondaryCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isFriendsWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#CosmoKramer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MortySeinfeld -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MortySeinfeld">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isParentof"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#FamilyMembers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MrKruger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MrKruger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Bosses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isBossof"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GeorgeCostanza"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MrLippman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MrLippman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Bosses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isBossof"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MrThomassoulo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MrThomassoulo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Bosses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isBossof"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GeorgeCostanza"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MrWilhelm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#MrWilhelm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Bosses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isBossof"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GeorgeCostanza"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#NedIsakoff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#NedIsakoff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Newman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Newman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SecondaryCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isFriendsWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#CosmoKramer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isNotFriendswith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#OwenMarch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#OwenMarch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#PhilTotola -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#PhilTotola">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Poppie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Poppie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SecondaryCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isFriendsWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#CosmoKramer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isNotFriendswith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#RachelGoldstein -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#RachelGoldstein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SecondaryCharacters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SecondaryCharacters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Seinfeld"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Seinfeld -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Seinfeld">
+        <rdfs:defintion xml:lang="en">Seinfeld is an American sitcom television series created by Larry David and Jerry Seinfeld for NBC.</rdfs:defintion>
+        <rdfs:isDefinedBy xml:lang="en">Wikipedia</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SherryBecker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SherryBecker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SidFarkus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SidFarkus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Bosses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isBossof"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GeorgeCostanza"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SueEllenMischke -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SueEllenMischke">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isNotFriendswith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SusanRoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SusanRoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GeorgeCostanza"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isFriendsWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isNotFriendswith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#CosmoKramer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#TheDrake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#TheDrake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SecondaryCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isFriendsWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#CosmoKramer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isFriendsWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isFriendsWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GeorgeCostanza"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isFriendsWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#TheMaestro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#TheMaestro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isFriendsWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#CosmoKramer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isNotFriendswith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#TheSoupNazi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#TheSoupNazi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SecondaryCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isFriendsWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#CosmoKramer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isNotFriendswith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#TimWhatley -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#TimWhatley">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#SecondaryCharacters"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#isFriendsWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#JerrySeinfeld"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ToddGack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ToddGack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Tony -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Tony">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#GirlfriendsBoyfriends"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#hasDated"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#ElaineBenes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Uncle_Leo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#Uncle_Leo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12#FamilyMembers"/>
+        <rdfs:defintion>Uncle Leo is uncle to Jerry Seinfeld, brother to Helen Seinfeld</rdfs:defintion>
+        <rdfs:isDefinedBy>CS</rdfs:isDefinedBy>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
