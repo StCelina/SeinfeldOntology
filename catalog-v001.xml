@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1585066444806" name="http://www.semanticweb.org/celinastillman/ontologies/2020/1/untitled-ontology-5" uri="INFO%206540%20-%20Data%20Management%20/Week%20Eight%20-%20Ontologies/MyPizzaOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1585066444806" name="http://www.semanticweb.org/celinastillman/ontologies/2020/2/untitled-ontology-12" uri="Seinfeld%20Ontology.owl"/>
+    </group>
+</catalog>
